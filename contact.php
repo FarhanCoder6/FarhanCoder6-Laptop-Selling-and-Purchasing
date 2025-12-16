@@ -73,7 +73,7 @@ $msg='';
                                             </div>
                                             <div class="col-lg-4 col-md-4 col-sm-6 col-sm-12 col-12">
                                                 <div class="form-group">
-                                                    <button type="submit" name="btn-submit" class="cp-default-btn-sm">Send Message</button>
+                                                    <button type="submit" name="btn-submit" class="cp-default-btn-sm" style="cursor:pointer";>Send Message</button>
                                                 </div>
                                             </div>
                                             <div class="col-lg-8 col-md-8 col-sm-6 col-sm-12 col-12">

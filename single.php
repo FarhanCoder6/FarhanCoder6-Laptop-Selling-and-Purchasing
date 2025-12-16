@@ -288,7 +288,7 @@ $id='';
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-6 col-12 text-center-mb">
-                            <p>Copyright © classipost</p>
+                            <p>Copyright © 2025 Classipost. Developed by Farhan.</p>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6 col-12 text-right text-center-mb">
                             <ul>

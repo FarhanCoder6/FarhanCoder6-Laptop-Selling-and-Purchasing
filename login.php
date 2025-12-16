@@ -91,7 +91,7 @@ $message='';
                                     <div class="row">
                                         <div class="ml-auto col-sm-9 col-12 ml-none--mb">
                                             <div class="form-group">
-                                                <button type="submit" name="btn-submit" class="cp-default-btn-sm">SignUp Now!</button>
+                                                <button type="submit" name="btn-submit" style="cursor:pointer"; class="cp-default-btn-sm">SignUp Now!</button>
                                             </div>
                                         </div>
                                     </div>
@@ -109,10 +109,11 @@ $message='';
                                     <a href="#"><img src="img/banner/more2.png" alt="more" class="img-fluid">Manage Product</a>
                                 </li>
                                 <li>
-                                    <a href="favourite-ad-list.php"><img src="img/banner/more3.png" alt="more" class="img-fluid">Favorite Ad list</a>
+                                    <a href="#"><img src="img/banner/more3.png" alt="more" class="img-fluid">Favorite Ad list</a>
                                 </li>
                             </ul>
                         </div>
+                        
                         <div class="sidebar-item-box">
                             <img src="img/banner/sidebar-banner1.jpg" alt="banner" class="img-fluid m-auto">
                         </div>

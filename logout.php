@@ -1,5 +1,10 @@
 <?php
 include("admin/config.php");
-session_unset($_SESSION['user_session']);
-header("location:index.php");
+session_start();
+
+session_unset();        // remove all session variables
+session_destroy();      // destroy session
+
+header("Location: index.php");
+exit();
 ?>

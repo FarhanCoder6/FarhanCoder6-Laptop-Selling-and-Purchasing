@@ -134,7 +134,7 @@ $msg='';
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-6 col-12 text-center-mb">
-                            <p>Copyright © classipost</p>
+                            <p>Copyright © 2025 Classipost. Developed by Farhan.</p>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6 col-12 text-right text-center-mb">
                             <ul>
@@ -185,8 +185,8 @@ $msg='';
                                 <input id="checkbox1" name="remember" type="checkbox">
                                 <label for="checkbox1">Remember Me</label>
                             </div> -->
-                            <button class="default-big-btn" type="submit" name="btn-login" value="Login">Login</button>
-                            <button class="default-big-btn form-cancel" type="submit" value="">Cancel</button>
+                            <button class="default-big-btn" type="submit" name="btn-login" value="Login" style="cursor:pointer";>Login</button>
+                            <button class="default-big-btn form-cancel" type="submit" value="" style="cursor:pointer";>Cancel</button>
                             
                         </form>
                     </div>

@@ -55,9 +55,10 @@ include('admin/config.php');
                                     <ul>
                                             <?php if(!isset($_SESSION['user_session'])){ ?>
                                         <li>
-                                            <button type="button" class="login-btn" data-toggle="modal" data-target="#myModal" style="color:#ccc;">
-                                                <i class="fa fa-lock" aria-hidden="true"></i>Login
-                                            </button>
+                                        <button type="button" class="login-btn" data-toggle="modal" data-target="#myModal" style="color:#ccc; cursor: pointer;">
+                                            <i class="fa fa-lock" aria-hidden="true"></i> Login
+                                        </button>
+
 
                                         </li>
                                     <?php }else{ ?>
