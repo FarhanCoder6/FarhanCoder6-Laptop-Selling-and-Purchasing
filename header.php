@@ -46,7 +46,7 @@ include('admin/config.php');
                                 <div class="top-bar-left">
                                     <a href="post-ad.php" class="cp-default-btn d-lg-none">Post Your Ad</a>
                                     <p class="d-none d-lg-block" style="color:#ccc; padding-top: 7px;">
-                                        <i class="fa fa-life-ring" aria-hidden="true"></i>Have any questions? +088 199990 or mail@classipost
+                                        <i class="fa fa-life-ring" aria-hidden="true"></i>Have any questions? +923006806417 or muhammadfarhankhan791@gmail.com
                                     </p>
                                 </div>
                             </div>

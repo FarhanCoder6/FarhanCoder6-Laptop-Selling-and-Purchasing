@@ -274,7 +274,7 @@ $id='';
                                         </a>
                                     </li>
                                     <li class="li-classipost">
-                                        <a href="#">
+                                        <a href="https://www.linkedin.com/in/muhammad-farhan-6a8176307/">
                                             <img src="img/footer/linkedin.jpg" alt="social">
                                         </a>
                                     </li>

@@ -120,7 +120,7 @@ $msg='';
                                         </a>
                                     </li>
                                     <li class="li-classipost">
-                                        <a href="#">
+                                        <a href="https://www.linkedin.com/in/muhammad-farhan-6a8176307/">
                                             <img src="img/footer/linkedin.jpg" alt="social">
                                         </a>
                                     </li>
@@ -134,7 +134,7 @@ $msg='';
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-6 col-12 text-center-mb">
-                            <p>Copyright © 2025 Classipost. Developed by Farhan.</p>
+                            <p>Copyright © 2025 Classipost. Developed by Muhammad Farhan.</p>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6 col-12 text-right text-center-mb">
                             <ul>

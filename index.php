@@ -23,7 +23,7 @@ include('header.php');
                                     <div class="col-8">
                                         <div class="layout-switcher">
                                             <ul>
-                                                <li>
+                                                <!-- <li>
                                                     <div class="page-controls-sorting">
                                                         <button class="sorting-btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Sort By<i class="fa fa-sort" aria-hidden="true"></i></button>
                                                         <div class="dropdown-menu">
@@ -32,7 +32,7 @@ include('header.php');
                                                             <a class="dropdown-item" href="#">Rating</a>
                                                         </div>
                                                     </div>
-                                                </li>
+                                                </li> -->
                                                 <li class="active"><a class="product-view-trigger" href="#" data-type="category-grid-layout1"><i class="fa fa-th-large"></i></a></li>
                                                 <li><a href="#" data-type="category-list-layout1" class="product-view-trigger"><i class="fa fa-list"></i></a></li>
                                             </ul>

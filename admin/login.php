@@ -1,17 +1,35 @@
 <?php 
 include 'config.php';
 if(isset($_POST['btn-login'])){
-  $email     = $_POST['email'];
-  $pass      = $_POST['pass'];
-  $sql = "select * from `admin` where `email` = '$email' AND `pass` = '$pass'";
+  $email     = isset($_POST['email']) ? trim($_POST['email']) : '';
+  $pass      = isset($_POST['pass']) ? trim($_POST['pass']) : '';
+  $email     = mysqli_real_escape_string($con, $email);
+  $sql = "select * from `admin` where LOWER(`email`) = LOWER('$email') limit 1";
   $sqlr = mysqli_query($con, $sql);
-  if(mysqli_num_rows($sqlr)){
+  if(!$sqlr){
+    $msg = "<div class='alert alert-danger'>Server error. Please ensure database connection and admin table exist.</div>";
+  }elseif(mysqli_num_rows($sqlr) > 0){
     $data = mysqli_fetch_array($sqlr);
-    $_SESSION['admin'] = $data;
-    header('location:index.php');
+    $stored = isset($data['pass']) ? $data['pass'] : '';
+    $valid = false;
+    if(function_exists('password_verify') && strlen($stored) > 0 && !ctype_space($stored)){
+      if(password_verify($pass, $stored)){
+        $valid = true;
+      }
+    }
+    if(!$valid && $stored === $pass){
+      $valid = true;
+    }
+    if($valid){
+      $_SESSION['admin'] = $data;
+      header('location: http://localhost/Laptop_Selling_System/admin/index.php');
+      exit;
+    }else{
+      $msg = "<div class='alert alert-danger'>Email or password not matched.</div>";
+    }
 
   }else{
-    $msg = "<div class='alert alert-danger'>Email or password not matched.</div>";
+    $msg = "<div class='alert alert-danger'>Account not found with this email.</div>";
   }
 }
  ?>
@@ -43,6 +61,7 @@ if(isset($_POST['btn-login'])){
                    
                   </div>
                 </div>
+                <?php if(isset($msg)){ echo $msg; } ?>
                 <h3 class="mt-0">Falcon</h3>
                 <p class="help-block">Or Be Classical</p>
                 <div class="content">
@@ -78,7 +97,7 @@ if(isset($_POST['btn-login'])){
   </div>
   <!--  Vendor JavaScripts -->
   <script src="assets/bundles/libscripts.bundle.js"></script>
-  <script src="assets/bundles/mainscripts.bundle.js"></script>
+  <script src="assets/bundles/vendorscripts.bundle.js"></script>
   <!-- Custom Js -->
 </body>
 
