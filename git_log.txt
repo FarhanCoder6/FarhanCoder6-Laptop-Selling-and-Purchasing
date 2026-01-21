@@ -1,0 +1,4 @@
+﻿bd0847f Enhance category deletion process: added product and gallery image deletion, improved input sanitization, and implemented success/error messaging for user feedback.
+0bd2961 final commit
+05b016a fixed the error
+881db97 Laptop Selling System Project
